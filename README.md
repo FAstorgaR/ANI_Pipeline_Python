@@ -7,7 +7,13 @@ Este pipeline permite descargar genomas completos desde RefSeq, descomprimirlos,
 
 - Conda instalado
 - Git
+- 
+## Uso
 
+- Ejecuta el notebook.
+- Ingresa el taxID del organismo.
+- El pipeline descargará los genomas, los descomprimirá y calculará ANI.
+- Los resultados estarán en skani_output.tsv y fastani_output.tsv.
 ## Instalación
 
 ```bash
@@ -17,9 +23,5 @@ conda env create -f environment.yml
 conda activate ani_env
 jupyter notebook ANI_pipeline.ipynb
 
-##Uso
 
-- Ejecuta el notebook.
-- Ingresa el taxID del organismo.
-- El pipeline descargará los genomas, los descomprimirá y calculará ANI.
-- Los resultados estarán en skani_output.tsv y fastani_output.tsv.
+
